@@ -1,0 +1,129 @@
+{
+  "communities": {
+    "0": [
+      "agents_blocked_http_fetching",
+      "agents_context_mode_rules",
+      "agents_context_window_flooding_rationale",
+      "agents_output_constraints",
+      "agents_raw_http_flooding_rationale",
+      "agents_redirected_analysis_workflow",
+      "agents_stdout_only_rationale",
+      "agents_tool_selection_hierarchy",
+      "agents_windows_path_handling"
+    ],
+    "1": [
+      "prompt_create_note_action",
+      "prompt_dark_mode_visual_design",
+      "prompt_example_seed_notes",
+      "prompt_homepage_notes_cards",
+      "prompt_note",
+      "prompt_note_edit_flow",
+      "prompt_personal_notes_app"
+    ],
+    "2": [
+      "prompt_bun",
+      "prompt_drizzle_orm",
+      "prompt_nextjs",
+      "prompt_shadcn_ui",
+      "prompt_sqlite",
+      "prompt_tailwind_css",
+      "prompt_technology_stack"
+    ],
+    "3": [
+      "readme_flownotes"
+    ]
+  },
+  "cohesion": {
+    "0": 0.22,
+    "1": 0.43,
+    "2": 0.29,
+    "3": 1.0
+  },
+  "gods": [
+    {
+      "id": "prompt_personal_notes_app",
+      "label": "Personal Notes App",
+      "degree": 7
+    },
+    {
+      "id": "prompt_technology_stack",
+      "label": "Technology Stack",
+      "degree": 7
+    },
+    {
+      "id": "agents_context_mode_rules",
+      "label": "Context-Mode Routing Rules",
+      "degree": 6
+    },
+    {
+      "id": "prompt_note",
+      "label": "Note",
+      "degree": 4
+    },
+    {
+      "id": "prompt_homepage_notes_cards",
+      "label": "Homepage Notes Card Listing",
+      "degree": 2
+    },
+    {
+      "id": "prompt_note_edit_flow",
+      "label": "Note Editing Flow",
+      "degree": 2
+    },
+    {
+      "id": "prompt_create_note_action",
+      "label": "Create New Note Action",
+      "degree": 2
+    },
+    {
+      "id": "agents_blocked_http_fetching",
+      "label": "Blocked Direct HTTP Fetching",
+      "degree": 2
+    },
+    {
+      "id": "agents_redirected_analysis_workflow",
+      "label": "Redirected Analysis Workflow",
+      "degree": 2
+    },
+    {
+      "id": "prompt_dark_mode_visual_design",
+      "label": "Dark Mode Visual Design",
+      "degree": 1
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Personal Notes App",
+      "target": "Technology Stack",
+      "source_files": [
+        "prompt-principal.md",
+        "prompt-principal.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "note": "Bridges community 1 \u2192 community 2"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Technology Stack` connect `App Stack` to `Notes UX`?",
+      "why": "High betweenness centrality (0.225) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Personal Notes App` connect `Notes UX` to `App Stack`?",
+      "why": "High betweenness centrality (0.208) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 3 inferred relationships involving `Note` (e.g. with `Homepage Notes Card Listing` and `Note Editing Flow`) actually correct?",
+      "why": "`Note` has 3 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `flownotes`, `Dark Mode Visual Design`, `Bun` to the rest of the system?",
+      "why": "15 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}
