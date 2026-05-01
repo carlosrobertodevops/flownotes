@@ -1,0 +1,3 @@
+{"created_at_ms":1777678673683,"model":"claude-opus-4-6","session_id":"session-1777678673684-0","type":"session_meta","updated_at_ms":1777678673683,"version":1,"workspace_root":"/Users/carlosroberto/Workspace/Projetos/fullstack/flow/flownotes"}
+{"text":"criar um relatório REPORT.md do projeto com base em ./docs/*.md","timestamp_ms":1777678971343,"type":"prompt_history"}
+{"message":{"blocks":[{"text":"criar um relatório REPORT.md do projeto com base em ./docs/*.md","type":"text"}],"role":"user"},"type":"message"}
